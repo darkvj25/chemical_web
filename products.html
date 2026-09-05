@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog | Global Chemical Supplies</title>
+    <meta name="description" content="Browse our catalog of high-purity industrial chemicals including GBL, GHB, BDO, Calaunie Mular Oxide, and DMT.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#001f3f',
+                        forest: '#228B22',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-navy flex items-center">
+                <i class="fas fa-flask mr-2 text-forest"></i> Global Chem
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-forest transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-forest transition">About Us</a>
+                <a href="products.html" class="text-navy font-semibold hover:text-forest transition">Products</a>
+                <a href="services.html" class="text-gray-600 hover:text-forest transition">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-forest transition">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-navy">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white border-t md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+            <a href="products.html" class="block px-4 py-2 text-navy hover:bg-gray-100">Products</a>
+            <a href="services.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-navy text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Product Catalog</h1>
+            <p class="text-gray-400 mt-4">Premium grade industrial and research chemicals.</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <!-- Sidebar (Reference inspired) -->
+                <div class="w-full lg:w-1/4 px-4 mb-12 lg:mb-0">
+                    <div class="bg-white border rounded-lg p-6 sticky top-24">
+                        <h3 class="text-xl font-bold text-navy mb-6 pb-2 border-b">Categories</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-forest font-semibold hover:underline flex justify-between">Industrial Solvents <span>(3)</span></a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-forest transition flex justify-between">Research Chemicals <span>(2)</span></a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-forest transition flex justify-between">Oxide Compounds <span>(1)</span></a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-forest transition flex justify-between">Bulk Cleaning <span>(4)</span></a></li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold text-navy mt-10 mb-6 pb-2 border-b">Global Availability</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" checked class="mr-2 accent-forest"> UK Warehouse
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" checked class="mr-2 accent-forest"> EU Distribution (DE)
+                            </label>
+                            <label class="flex items-center text-gray-700">
+                                <input type="checkbox" checked class="mr-2 accent-forest"> USA Stock (CA)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="w-full lg:w-3/4 px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Product 1: GBL -->
+                        <div class="bg-white border rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="GBL" class="w-full h-56 object-cover">
+                                <span class="absolute top-4 right-4 bg-forest text-white text-xs font-bold px-3 py-1 rounded">In Stock</span>
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-2xl font-bold text-navy mb-2">GBL</h3>
+                                <p class="text-gray-500 text-sm mb-4">Gamma-Butyrolactone (99.9%)</p>
+                                <p class="text-gray-600 mb-6 italic text-sm">Industrial solvent for professional cleaning and chemical synthesis.</p>
+                                <div class="mb-6">
+                                    <label for="gbl-volume" class="block text-xs font-bold text-gray-500 uppercase mb-2">Available Volume:</label>
+                                    <select id="gbl-volume" class="w-full border p-2 rounded bg-gray-50 text-sm focus:outline-none focus:border-forest">
+                                        <option>1 Litre - Sample</option>
+                                        <option>5 Litres - Standard</option>
+                                        <option>10 Litres - Industrial</option>
+                                        <option>25 Litres - Wholesale</option>
+                                    </select>
+                                </div>
+                                <a href="contact.html" class="block text-center bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">Request Price</a>
+                            </div>
+                        </div>
+
+                        <!-- Product 2: GHB -->
+                        <div class="bg-white border rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="GHB" class="w-full h-56 object-cover">
+                                <span class="absolute top-4 right-4 bg-navy text-white text-xs font-bold px-3 py-1 rounded">Research Only</span>
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-2xl font-bold text-navy mb-2">GHB</h3>
+                                <p class="text-gray-500 text-sm mb-4">Gamma-Hydroxybutyrate (Lab Grade)</p>
+                                <p class="text-gray-600 mb-6 italic text-sm">Strictly for industrial and research applications. Certified purity.</p>
+                                <div class="mb-6 text-sm text-gray-500">
+                                    <p><i class="fas fa-microscope mr-2 text-forest"></i> 99.9% Analytical Grade</p>
+                                    <p><i class="fas fa-shield-virus mr-2 text-forest"></i> Certified Lab Synthesis</p>
+                                </div>
+                                <a href="contact.html" class="block text-center bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">Request Price</a>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: BDO -->
+                        <div class="bg-white border rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="BDO" class="w-full h-56 object-cover">
+                                <span class="absolute top-4 right-4 bg-forest text-white text-xs font-bold px-3 py-1 rounded">In Stock</span>
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-2xl font-bold text-navy mb-2">BDO</h3>
+                                <p class="text-gray-500 text-sm mb-4">1,4-Butanediol</p>
+                                <p class="text-gray-600 mb-6 italic text-sm">Precursor for high-performance plastics and polyurethanes.</p>
+                                <div class="mb-6">
+                                    <label for="bdo-volume" class="block text-xs font-bold text-gray-500 uppercase mb-2">Bulk Options:</label>
+                                    <select id="bdo-volume" class="w-full border p-2 rounded bg-gray-50 text-sm focus:outline-none focus:border-forest">
+                                        <option>2 Litre Bottle</option>
+                                        <option>10 Litre Canister</option>
+                                        <option>200 Litre Drum</option>
+                                    </select>
+                                </div>
+                                <a href="contact.html" class="block text-center bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">Request Price</a>
+                            </div>
+                        </div>
+
+                        <!-- Product 4: Calaunie Mular Oxide -->
+                        <div class="bg-white border rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Calaunie Mular Oxide" class="w-full h-56 object-cover">
+                                <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded">Special Order</span>
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-2xl font-bold text-navy mb-2">Calaunie Mular Oxide</h3>
+                                <p class="text-gray-500 text-sm mb-4">Rare Industrial Reagent</p>
+                                <p class="text-gray-600 mb-6 italic text-sm">Advanced metallurgical and research compound. High purity.</p>
+                                <div class="mb-6 text-sm text-gray-500">
+                                    <p><i class="fas fa-truck-fast mr-2 text-forest"></i> Global Discreet Shipping</p>
+                                    <p><i class="fas fa-box-open mr-2 text-forest"></i> Specialized Packaging</p>
+                                </div>
+                                <a href="contact.html" class="block text-center bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">Request Price</a>
+                            </div>
+                        </div>
+
+                        <!-- Product 5: DMT -->
+                        <div class="bg-white border rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1554475900-0a0350e3fc7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="DMT" class="w-full h-56 object-cover">
+                                <span class="absolute top-4 right-4 bg-navy text-white text-xs font-bold px-3 py-1 rounded">Analytical Grade</span>
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-2xl font-bold text-navy mb-2">DMT</h3>
+                                <p class="text-gray-500 text-sm mb-4">Dimethyltryptamine (99.9% Pure)</p>
+                                <p class="text-gray-600 mb-6 italic text-sm">For certified laboratory research and analysis purposes only.</p>
+                                <div class="mb-6 text-sm text-gray-500 text-center border-t pt-4">
+                                    <p class="font-bold text-navy mb-1">Purity Guaranteed</p>
+                                    <p>Certificate of Analysis Available</p>
+                                </div>
+                                <a href="contact.html" class="block text-center bg-navy text-white font-bold py-3 rounded hover:bg-gray-800 transition">Request Price</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h4 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-flask mr-2 text-forest"></i> Global Chem</h4>
+                    <p class="text-gray-400">Your trusted partner in high-quality industrial chemicals since 2008.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>global.uk.chemicals@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3"></i>
+                            <span>UK: +44 7983 259218</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>USA: (615) 596-8703</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Locations</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Inverness, Scotland, UK</li>
+                        <li>Berlin, Germany</li>
+                        <li>Sacramento, California, USA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Global Chemical Supplies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Global Chemical Supplies</title>
+    <meta name="description" content="Discover our services: global shipping, rigorous quality assurance, and flexible bulk ordering for industrial chemicals.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#001f3f',
+                        forest: '#228B22',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-navy flex items-center">
+                <i class="fas fa-flask mr-2 text-forest"></i> Global Chem
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-forest transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-forest transition">About Us</a>
+                <a href="products.html" class="text-gray-600 hover:text-forest transition">Products</a>
+                <a href="services.html" class="text-navy font-semibold hover:text-forest transition">Services</a>
+                <a href="contact.html" class="text-gray-600 hover:text-forest transition">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-navy">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white border-t md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About Us</a>
+            <a href="products.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Products</a>
+            <a href="services.html" class="block px-4 py-2 text-navy hover:bg-gray-100">Services</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-navy text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Our Services</h1>
+            <p class="text-gray-400 mt-4">Comprehensive solutions for the chemical industry.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Shipping -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gray-100 text-forest rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-truck-fast text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-4">Global Shipping</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We offer specialized logistics for chemical transport, ensuring safe and discreet delivery across the UK, Europe, and North America. All shipments are tracked and handled according to international safety standards.
+                    </p>
+                </div>
+                <!-- Quality Assurance -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gray-100 text-forest rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-vial text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-4">Quality Assurance</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every product in our catalog undergoes rigorous laboratory testing to verify purity and composition. We provide Certificates of Analysis (CoA) upon request for all our industrial chemicals.
+                    </p>
+                </div>
+                <!-- Bulk Ordering -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gray-100 text-forest rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-boxes-stacked text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy mb-4">Bulk Ordering</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Designed for industrial manufacturing and large-scale research projects. We offer tiered pricing and custom logistics solutions for bulk procurement, ensuring a steady supply for your operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to streamline your chemical supply chain?</h2>
+            <a href="contact.html" class="bg-forest hover:bg-green-700 text-white font-bold py-4 px-10 rounded-lg transition text-lg">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h4 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-flask mr-2 text-forest"></i> Global Chem</h4>
+                    <p class="text-gray-400">Your trusted partner in high-quality industrial chemicals since 2008.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>global.uk.chemicals@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3"></i>
+                            <span>UK: +44 7983 259218</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>USA: (615) 596-8703</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Locations</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Inverness, Scotland, UK</li>
+                        <li>Berlin, Germany</li>
+                        <li>Sacramento, California, USA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Global Chemical Supplies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
